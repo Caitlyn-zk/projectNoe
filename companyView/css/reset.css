@@ -1,0 +1,283 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+	display: block;
+}
+
+audio,
+canvas,
+video {
+	display: inline-block;
+}
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+[hidden] {
+	display: none;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+a:focus {
+	outline: thin dotted;
+}
+
+a:active,
+a:hover {
+	outline: 0;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+li {
+	list-style: none;
+}
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+dfn {
+	font-style: italic;
+}
+
+hr {
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	height: 0;
+}
+
+mark {
+	background: #ff0;
+	color: #000;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace, serif;
+	font-size: 1em;
+}
+
+pre {
+	white-space: pre-wrap;
+}
+
+q {
+	quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+small {
+	font-size: 80%;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+img {
+	border: 0;
+}
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+figure {
+	margin: 0;
+}
+
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+	border: 0;
+	padding: 0;
+}
+
+button,
+input,
+select,
+textarea {
+	font-family: inherit;
+	font-size: 100%;
+	margin: 0;
+}
+
+button,
+input {
+	line-height: normal;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+	cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+input[type="search"] {
+	-webkit-appearance: textfield;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+textarea {
+	overflow: auto;
+	vertical-align: top;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*超出隐藏*/
+.overflow{
+	overflow: hidden;//超出的文本隐藏
+	text-overflow: ellipsis;//溢出用省略号显示
+	white-space: nowrap;//溢出不换行
+}
+.overflow-tow{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;//作为弹性伸缩盒子模型显示.
+	-webkit-box-orient: vertical;//设置伸缩盒子的子元素排列方式--从上到下垂直排列
+	-webkit-line-clamp: 2;//显示行
+}
+
+/*文字超出以三个点形式隐藏 一行隐藏*/
+.text-ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	/*不允许换行*/
+	white-space: nowrap;
+}
+/*文字超出以三个点形式隐藏 多行行隐藏*/
+.text-ellipsis-tow {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;//作为弹性伸缩盒子模型显示.
+	-webkit-box-orient: vertical;//设置伸缩盒子的子元素排列方式--从上到下垂直排列
+	-webkit-line-clamp: 5;//显示行
+}
+/*字体对齐方式*/
+.text-center {
+	text-align: center;
+}
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+/*浮动*/
+.float-l{
+	float: left;
+}
+.float-r{
+	float: right;
+}
+/*清除浮动*/
+/*after before 伪元素*/
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+/*字体 常用有 12 14 16 18 20 22 24 30 36*/
+.font-12{
+	font-size: 12px;
+}
+.font-14{
+	font-size: 14px;
+}
+.font-16{
+	font-size: 16px;
+}
+.font-18{
+	font-size: 18px;
+}
+.font-20{
+	font-size: 20px;
+}
+.font-24{
+	font-size: 24px;
+}
+.font-30{
+	font-size: 30px;
+}
+.font-36{
+	font-size: 36px;
+}
